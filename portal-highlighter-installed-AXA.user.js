@@ -2,7 +2,7 @@
 // @id             iitc-plugin-highlight-portals-installed-AXAShield@fl0o0l
 // @name           IITC plugin: highlight portals installed AXA Shield
 // @category       Highlighter
-// @version        0.0.1.20151022.000000
+// @version        0.0.2.000000
 // @namespace      https://github.com/fl0o0l/iitc
 // @updateURL      https://github.com/fl0o0l/iitc/raw/master/portal-highlighter-installed-AXA.user.js
 // @downloadURL    https://github.com/fl0o0l/iitc/raw/master/portal-highlighter-installed-AXA.user.js
@@ -37,6 +37,7 @@ window.plugin.portalHighlighterPortalsInstalledAXAShield.colorLevel = function(d
     var portal_guid = data.portal.options.guid;
     var resoColor = '#ffffff';
     var resoOpacity = .0;
+Var sticky = 0;
    
     if (portal_guid) {
         var data2 = portalDetail.get(portal_guid);
@@ -48,9 +49,13 @@ window.plugin.portalHighlighterPortalsInstalledAXAShield.colorLevel = function(d
 
             //MOD確認
             $.each(data2.mods, function(ind, mod) {
-                if(mod && mod.name !== undefined && mod.name == 'AXA Shield') {
+                if(mod && mod.name !== undefined && mod.name == 'Aegis Shield') {
                     installed = true;
-                }
+                }  
+ If (mods && mods.Name == ) {
+sticky + 20;
+
+};
             }); 
 
             if (installed) {
