@@ -49,7 +49,7 @@ window.plugin.portalHighlighterPortalsInstalledAXAorVRPS.colorLevel = function(d
 
             //MOD確認
             $.each(data2.mods, function(ind, mod) {
-                if(mod && mod.name !== undefined && mod.name == 'AXA Shield') {
+                if(mod && mod.name !== undefined && mod.name == 'Aegis Shield') {
                     installedAXA = true;
                 }
                 if(mod && mod.name !== undefined && mod.name == 'Portal Shield' && mod.rarity == 'VERY_RARE') {
